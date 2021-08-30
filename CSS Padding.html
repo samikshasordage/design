@@ -1,0 +1,165 @@
+<DOCTYPE html!>
+<html>
+<head>
+<style>
+body {
+  background-color: lightgrey;
+}
+h1 {
+  color: black;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+.previous {
+  background-color:  #DF6589FF;
+  color: white;
+  padding:10px 20px;
+}
+.next {
+  background-color:#DF6589FF;
+  color: white;
+  padding:10px 20px;
+}
+p{
+  font-size:20px;
+}
+ul{
+    font-size:20px;
+}
+div {
+  padding: 70px;
+  border: 2px solid #4CAF50;
+  font-size:20px;
+}
+code {
+  font-family: Consolas,"courier new";;
+  color: crimson;
+  background-color: lightgrey;
+  padding: 2px;
+  font-size: 90%;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 6px;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+</style>
+</head>
+<body>
+<h1>CSS Padding</h1>
+<a href="CSS Margins.html" class="previous">&laquo; Previous</a>
+<a href="#" class="next">Next &raquo;</a>
+<p>Padding is used to create space around an element's content, inside of any defined borders.</p>
+<div>This element has a padding of 70px.</div>
+<h2>CSS Padding</h2>
+<p>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.<br>
+
+-With CSS, you have full control over the padding.<br> There are properties for setting the padding for each side of an element (top, right, bottom, and left).</p>
+
+<h2>Padding - Individual Sides</h2>
+<p>CSS has properties for specifying the padding for each side of an element:</p>
+<ul>
+<li><code>padding-top</code></li>
+<li><code>padding-right</code></li>
+<li><code>padding-bottom</code></li>
+<li><code>padding-left</code></li>
+</ul>
+<p>All the padding properties can have the following values:</p>
+<ul>
+<li>length - specifies a padding in px, pt, cm, etc.</li>
+<li>% - specifies a padding in % of the width of the containing element</li>
+<li>inherit - specifies that the padding should be inherited from the parent element</li>
+</ul>
+<p><b>Note:</b> Negative values are not allowed.</p>
+<h2>Padding - Shorthand Property</h2>
+<p>To shorten the code, it is possible to specify all the padding properties in one property.</p>
+<p>The <code>padding</code> property is a shorthand property for the following individual padding properties:</p>
+<ul>
+<li><code>padding-top</code></li>
+<li><code>padding-right</code></li>
+<li><code>padding-bottom</code></li>
+<li><code>padding-left</code></li>
+</ul>
+<p>So, here is how it works:</p>
+<p>If the <code>padding</code> property has four values:</p>
+<ul>
+<li><b>padding: 25px 50px 75px 100px;</b></li>
+      <li>top padding is 25px</li>
+        <li>right padding is 50px</li>
+       <li>bottom padding is 75px</li>
+       <li>left padding is 100px</li>
+</ul>
+<p>If the <code>padding</code> property has two values:</p>
+<ul>
+<li><b>padding: 25px 50px;</b></li>
+<li>top and bottom paddings are 25px</li>
+<li>right and left paddings are 50px</li>
+</ul>
+<p>If the <code>padding</code> property has one value:
+<ul>
+<li><b>padding: 25px;</b></li>
+<li>all four paddings are 25px<li>
+</ul>
+<h2>Padding and Element Width</h2>
+<p>The CSS <code>width</code> property specifies the width of the element's content area. The content area is the portion    inside the padding, border, and margin of an element (the box model).</p>
+
+<p>So, if an element has a specified width, the padding added to that element will be added to the total width of the    element. This is often an undesirable result.</p>
+
+<h2>Example</h2>
+<p>Here, the div element is given a width of 300px. However, the actual width of the div element will be 350px (300px +    25px of left padding + 25px of right padding):</p>
+<p>To keep the width at 300px, no matter the amount of padding, you can use the <code>box-sizing property.</code> This    causes the element to maintain its width; if you increase the padding, the available content space will decrease.</p>
+<h2>More Examples</h2>
+<p><u>Set the left padding</u></p>
+<p>This example demonstrates how to set the left padding of a p element.</p>
+
+<p><u>Set the right padding</u></p>
+<p>This example demonstrates how to set the right padding of a p element.</p>
+
+<p><u>Set the top padding</u></p>
+<p>This example demonstrates how to set the top padding of a p element.</p>
+
+<p><u>Set the bottom padding</u></p>
+<p>This example demonstrates how to set the bottom padding of a p element.</p>
+<table>
+  <tr>
+    <th> Property</th>	
+     <th>Description</th>
+   </tr>
+    <tr>
+      <td><u>padding</u></td>	
+       <td>A shorthand property for setting all the padding properties in one declaration</td>
+    </tr>
+    <tr>
+       <td><u>padding-bottom</u></td>	
+        <td>Sets the bottom padding of an element</td>
+    </tr>
+    <tr>
+       <td><u>padding-left</u></td>	
+         <td>Sets the left padding of an element</td>
+    </tr>
+    <tr>
+       <td><u>padding-right</u></td>	
+        <td>Sets the right padding of an element</td>
+    </tr>
+    <tr>
+      <td><u>padding-top</u></td>	
+       <td>Sets the top padding of an element</td>
+    </tr>
+</table>
+<a href="CSS Margins.html" class="previous">&laquo; Previous</a>
+</body>
+</html>
