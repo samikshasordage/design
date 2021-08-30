@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightgrey;
+}
+h1 {
+  color: black;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+.previous {
+  background-color:  #DF6589FF;
+  color: white;
+  padding:10px 20px;
+}
+.next {
+  background-color: #DF6589FF;
+  color: white;
+   padding:10px 20px;
+}
+p{
+  font-size:20px;
+}
+div {
+  padding: 30px;
+  background-image:url("https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_960_720.png");
+  border: 1px solid #4CAF50;
+  font-size:20px;
+  width:50%
+}
+ul{
+    font-size:20px;
+}
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: lightgrey;
+  padding: 2px;
+  font-size: 105%;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 6px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<h1>CSS Backgrounds</h1>
+<a href="comments.html" class="previous">&laquo; Previous</a>
+<a href="CSS margins.html" class="next">Next &raquo;</a>
+<p>The CSS background properties are used to add background effects for elements.</p>
+<div>In these chapters, you will learn about the following CSS background properties:
+<ul>
+    <li>background-color</li>
+    <li>background-image</li>
+    <li>background-repeat</li>
+    <li>background-attachment</li>
+    <li>background-position</li>
+    <li>background (shorthand property)</li>
+</div >
+<h2>CSS background-color</h2>
+<p>The <code>background-color</code>property specifies the background color of an element.<br>
+  With CSS, a color is most often specified by:</p>
+<ul>
+  <li>a valid color name - like "red"</li>
+  <li>a HEX value - like "#ff0000"</li>
+  <li>an RGB value - like "rgb(255,0,0)"</li>
+</ul>
+<p>Look at CSS Color Values for a complete list of possible color values.</p>
+<h2>Other Elements</h2>
+<p>You can set the background color for any HTML elements:</p>
+<h2>Opacity / Transparency</h2>
+<p>The <code>opacity</code> property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:</p>
+
+<h2>Background Image</h2>
+<p>-The background-image property specifies an image to use as the background of an element.<br>
+
+-By default, the image is repeated so it covers the entire element.</p>
+<h2>CSS Background Image</h2>
+<p>-The <code>background-image</code> property specifies an image to use as the background of an element.<br>
+
+-By default, the image is repeated so it covers the entire element.</p>
+<div>Note: When using a background image, use an image that does not disturb the text.</div>
+<p>The background image can also be set for specific elements, like the <p> element:</p>
+<h2>CSS Background Repeat</h2>
+<p>-By default, the <code>background-image</code> property repeats an image both horizontally and vertically.<br>
+
+-Some images should be repeated only horizontally or vertically, or they will look strange, like this:<br>
+-If the image above is repeated only horizontally (background-repeat: repeat-x;), the background will look better:</p>
+<div>Tip: To repeat an image vertically, set background-repeat: repeat-y;</div>
+<h2>CSS background-repeat: no-repeat</h2>
+<p>Showing the background image only once is also specified by the background-repeat property:<br>
+In the example above, the <code>background image</code> is placed in the same place as the text. We want to change the position of the image, so that it does not disturb the text too much.</p>
+<h2>CSS background-position</h2>
+<p>The <code>background-position</code> property is used to specify the position of the background image.</p>
+<h2>CSS Background Attachment</h2>
+<p>The <code>background-attachment</code> property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):</p>
+<h2>CSS Background Shorthand</h2>
+<p>To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.<br>
+You can use the shorthand property <code>background</code>:<br>
+When using the shorthand property the order of the property values is:</p>
+<ul>
+<li><code>background-color</code></li>
+<li><code>background-image</code></li>
+<li><code>background-repeat</code></li>
+<li><code>background-attachment</code></li>
+<li><code>background-position</code></li>
+</ul>
+<p>It does not matter if one of the property values is missing, as long as the other ones are in this order. Note that we do not use the background-attachment property in the examples above, as it does not have a value.</p>
+<h2>All CSS Background Properties</h2>
+<table>
+  <tr>
+    <th>property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+     <td><u>background<u></td>
+     <td>Sets all the background properties in one declaration</td>
+  </tr>
+  <tr>
+     <td><u>background-attachment<u></td>
+     <td>Sets whether a background image is fixed or scrolls with the rest of the page</td>
+   </tr>
+   <tr>
+      <td><u>background-clip<u></td>
+      <td>Specifies the painting area of the background</td>
+   </tr>
+   <tr>
+      <td><u>background-color<u></td>
+      <td>Sets the background color of an element</td>
+   </tr>
+   <tr>
+       <td><u>background-image<u></td>
+       <td>Sets the background image for an element</td>
+   </tr>
+   <tr>
+       <td><u>background-origin<u></td>
+       <td>Specifies where the background image(s) is/are positioned</td>
+   </tr>
+   <tr>
+       <td><u>background-position<u></td>
+       <td>Sets the starting position of a background image</td>
+   </tr>
+   <tr>
+       <td><u>background-repeat<u></td>
+       <td>Sets how a background image will be repeated</td>
+   </tr>
+   <tr>
+      <td><u>background-size<u></td>
+      <td>Specifies the size of the background image(s)</td>
+   </tr> 
+</table>
+<a href="CSS margins.html" class="next">&laquo; Next</a>
+</body>
+</html>
