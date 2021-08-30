@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightgrey;
+}
+h1 {
+  color: black;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+.previous {
+  background-color:  #DF6589FF;
+  color: white;
+}
+.next {
+  background-color:#DF6589FF;
+  color: white;
+}
+p{
+  font-size:17px;
+}
+ul{
+    font-size:17px;
+}div {
+  padding: 30px;
+  border: 1px solid #4CAF50;
+  background-color:lightblue;
+  font-size:20px;
+}
+div 2 {
+  padding: 30px;
+  border: 1px solid #4CAF50;
+  background-color:lightpink;
+  font-size:20px;
+}
+ol{
+   font-size:17px;
+}
+</style>
+</head>
+<body>
+<h1>How To Add CSS</h1>
+<a href="selectors.html" class="previous">&laquo; Previous</a>
+<a href="comments.html" class="next">Next &raquo;</a>
+<p>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+<h2>Three Ways to Insert CSS</h2>
+<p>There are three ways of inserting a style sheet:</p>
+<ul>
+<li>External CSS</li>
+<li>Internal CSS</li>
+<li>Inline CSS</li>
+</ul>
+<h2>External CSS</h2>
+<p>-With an external style sheet, you can change the look of an entire website by changing just one file!<br>
+
+-Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.<br>
+-External styles are defined within the <link> element, inside the <head> section of an HTML page:<br>
+-An external style sheet can be written in any text editor, and must be saved with a .css extension.<br>
+
+-The external .css file should not contain any HTML tags.<br>
+
+-Here is how the "mystyle.css" file looks:<br>
+
+-"mystyle.css"
+</p>
+<div>Note: Do not add a space between the property value and the unit (such as<code> margin-left: 20 px;</code>). The correct way is: <code>margin-left: 20px;</code></div>
+
+<h2>Internal CSS</h2>
+<p>-An internal style sheet may be used if one single HTML page has a unique style.<br>
+
+-The internal style is defined inside the style element, inside the head section.</p>
+<h2>Inline CSS</h2>
+<p>-An inline style may be used to apply a unique style for a single element.<br>
+
+-To use inline styles, add the style attribute to the relevant element. 
+-The style attribute can contain any CSS property.
+</p>
+<div 2>Tip: An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.</div 2>
+<h2>Multiple Style Sheets</h2>
+<p>If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. </p>
+<h2>Cascading Order</h2>
+<p>What style will be used when there is more than one style specified for an HTML element?<br>
+
+All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:</p>
+<ol>
+  <li>Inline style (inside an HTML element)</li>
+  <li>External and internal style sheets (in the head section)</li>
+  <li>Browser default</li>
+</ol>
+<p>So, an inline style has the highest priority, and will override external and internal styles and browser defaults.</p>
+<a href="comments.html" class="next">Next &raquo;</a>
+</body>
+</html>
