@@ -1,0 +1,172 @@
+<DOCTYPE html!>
+<html>
+<head>
+<style>
+body {
+  background-color: lightgrey;
+}
+h1 {
+  color: black;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+.previous {
+  background-color:  #DF6589FF;
+  color: white;
+}
+.next {
+  background-color:#DF6589FF;
+  color: white;
+}
+p{
+  font-size:20px;
+}
+ul{
+    font-size:20px;
+}
+div {
+  margin: 10px;
+  border: 2px solid #4CAF50;
+  margin-left:10px;
+}
+code {
+  font-family: Consolas,"courier new";;
+  color: crimson;
+  background-color: lightgrey;
+  padding: 2px;
+  font-size: 90%;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 6px;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+</style>
+</head>
+<body>
+<h1>CSS Margins</h1>
+<a href="Background Images.html" class="previous">&laquo; Previous</a>
+<a href="CSS Padding.html" class="next">Next &raquo;</a>
+<p>Margins are used to create space around elements, outside of any defined borders.</p>
+<div>This element has a margin of 70px.</div>
+<h2>CSS Margins</h2>
+<p>-The CSS <code>margin</code> properties are used to create space around elements, outside of any defined borders.<br>
+
+-With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+<h2>Margin - Individual Sides</h2>
+<p>CSS has properties for specifying the margin for each side of an element:</p>
+<ul>
+   <li>margin-top</li>
+   <li>margin-right</li>
+   <li>margin-bottom</li>
+   <li>margin-left</li>
+</ul>
+<p>All the margin properties can have the following values:</p>
+<ul>
+    <li>auto - the browser calculates the margin</li>
+    <li>   length - specifies a margin in px, pt, cm, etc.</li>
+     <li>% - specifies a margin in % of the width of the containing element</li>
+     <li>inherit - specifies that the margin should be inherited from the parent element</li>
+</ul>
+<p><b>Tip:</b> Negative values are allowed.</p>
+<h2>Margin - Shorthand Property</h2>
+<p>-To shorten the code, it is possible to specify all the margin properties in one property.<br>
+
+-The <code>margin</code> property is a shorthand property for the following individual margin properties:</p>
+<ul>
+   <li>margin-top</li>
+   <li>margin-right</li>
+   <li>margin-bottom</li>
+   <li>margin-left</li>
+</ul>
+<p>So, here is how it works:<br>
+
+If the <code>margin</code> property has four values:
+</p>
+<ul>
+<li><b>margin: 25px 50px 75px 100px;</b></li>
+       <li>top margin is 25px</li>
+        <li>right margin is 50px</li>
+        <li>bottom margin is 75px</li>
+        <li>left margin is 100px</li>
+</ul>
+<p>If the <code>margin</code> property has three values:
+</p>
+<ul>
+    <li><b>margin: 25px 50px 75px;</b></li>
+<li>top margin is 25px</li>
+<li>right and left margins are 50px</li>
+<li>bottom margin is 75px</li>
+  </ul>
+<p>If the <code>margin</code> property has two values:</p>
+<ul>
+<li><b>margin: 25px 50px;</b></li>
+<li>top and bottom margins are 25px</li>
+<li>right and left margins are 50px</li>
+</ul>
+<p>If the margin property has one value:</p>
+<ul>
+<li><b>margin: 25px;</b></li>
+<li>all four margins are 25px<li>
+</ul>
+<h2>The auto Value</h2>
+<p>-You can set the margin property to auto to horizontally center the element within its container.<br>
+
+-The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.</p>
+<h2>The inherit Value</h2>
+<p>This example lets the left margin of the p class="ex1" element be inherited from the parent element (div):</p>
+<h2>CSS Margin Collapse</h2>
+<p>Sometimes two margins collapse into a single margin.</p>
+
+<h2>Margin Collapse</h2>
+<p>-Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.<br>
+
+-This does not happen on left and right margins! Only top and bottom margins!Sometimes two margins collapse into a single margin that is equal to the largest of the  two margins.<br>
+
+Look at the following example:<br>
+In the example above, the h1 element has a bottom margin of 50px and the h2 element has a top margin set to 20px.<br>
+
+Common sense would seem to suggest that the vertical margin between the h1 and the h2 would be a total of 70px (50px + 20px). But due to margin collapse, the actual margin ends up being 50px.</p>
+<table>
+   <tr>
+    <th>Property</th>
+    <th>Description</th>
+   </tr>
+    <tr>
+       <td><u>margin</u></td>
+        <td>A shorthand property for setting the margin properties in one declaration</td>
+    </tr>
+    <tr>
+       <td><u>margin-bottom</u></td>
+       <td>Sets the bottom margin of an element</td>
+    </tr>
+       <tr>
+         <td><u>margin-left</u></td>	
+          <td>Sets the left margin of an element<td>
+      </tr> 
+      <tr> 
+         <td><u>margin-right</u></td>	
+           <td>Sets the right margin of an element</td> 
+      </tr>
+      <tr>
+         <td><u>margin-top</u></td>
+          <td>Sets the top margin of an element</td>
+     </tr>
+</table>
+<a href="CSS Padding.html" class="next">Next &raquo;</a>
+</body>
+</html>
