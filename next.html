@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightgrey;
+}
+h1 {
+  color: black;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+.previous {
+  background-color:  #DF6589FF;
+  color: white;
+}
+.next {
+  background-color: #DF6589FF;
+  color: white;
+}
+p {
+  font-family: verdana;
+  font-size: 15px;
+  text-align:left-side;
+}
+p.a { 
+  word-spacing: 30px;
+}
+#rcorners1 {
+  border-radius: 25px;
+  background:  #4CAF50;
+  padding: 20px; 
+  width: 30px;
+  height: 30px;
+    
+}
+#rcorners2 {
+  border-radius: 25px;
+  background:  #4CAF50;
+  padding: 20px; 
+  width: 250px;
+  height: 30px;
+}
+rcorners{
+ box-spacing:30px;
+}
+p.big {
+  line-height: 1.8;
+}
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: lightgrey;
+  padding: 2px;
+  font-size: 105%;
+}
+</style>
+</head>
+<body>
+<h1>CSS Syntax</h1>
+<a href="start.html" class="previous">&laquo; Previous</a>
+<a href="selectors.html" class="next">Next &raquo;</a>
+<p>A CSS rule consists of a selector and a declaration block.</p>
+<h2>CSS Syntax</h2>
+<p class="a">Selector </p>
+<p id="rcorners1">h1</p>
+<p class="a">declaration declaration</p>
+<p id="rcorners2">{colour:blue;font-size:15px;}</p>
+<p class="big">-The selector points to the HTML element you want to style.<br>
+
+-The declaration block contains one or more declarations separated by semicolons.<br>
+
+-Each declaration includes a CSS property name and a value, separated by a colon.<br>
+
+-Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+<h3>Example Explained</h3>
+<p class="big">
+.<code>p</code> is a selector in CSS (it points to the HTML element you want to style:)<br>
+
+.<code>color </code>is a property, and <code>red</code> is the property value<br>
+
+.<code>text-align</code> is a property, and <code>center</code> is the property value<br>
+<a href="selectors.html" class="next">Next &raquo;</a>
+</html>
+</body>
